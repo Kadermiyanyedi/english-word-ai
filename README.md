@@ -27,7 +27,7 @@ uv sync
 
 Run the script to generate vocabulary and example sentences:
 
-`python main.py generate-daily-words`
+`python main.py generate-daily-words -o english_sentences.md -l B1`
 
 The output will be saved in **english_sentences.md**.
 
@@ -46,9 +46,9 @@ Word: consider
 | Present Perfect              | They have considered moving to another city. |
 
 ### TODO:
-[] Allow the user to specify the output file name.
+[X] Allow the user to specify the output file name.
 
-[] Allow the user to choose the language level for word selection.
+[X] Allow the user to choose the language level for word selection.
 
 [] Update the prompt to ensure words are not repeated.
 
