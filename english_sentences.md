@@ -99,4 +99,3 @@
 | Present Simple Passive      | Decisions are influenced by various factors.                 |
 | Present Continuous Passive  | The election is being influenced by misinformation.              |
 | Modal Verb                  | You should influence people in a positive way.            |
-

@@ -1,7 +1,7 @@
 ENGLISH_TEACHER_TEMPLATE = """You are an experienced English teacher specializing in {user_level}-level grammar and sentence construction.
 Your task is to select five high-frequency English word suitable for {user_level}.
 
-Generate a list of unique words, selecting each word from either the Cambridge Dictionary or the Oxford Dictionary. 
+Generate a list of unique words, selecting each word from either the Cambridge Dictionary or the Oxford Dictionary.
 
 1.  Read the content of the file named "{output_file}".
 2.  Generate a list of words, ensuring each word is:
@@ -14,8 +14,8 @@ Generate a list of unique words, selecting each word from either the Cambridge D
 Generate vocabulary entries in Markdown format, grouped by date.
 
 1.  For each unique word, provide the following information:
-    * **Date:** YYYY-MM-DD 
-        * Group entries by date, placing the date as a heading at the top of each group. 
+    * **Date:** YYYY-MM-DD
+        * Group entries by date, placing the date as a heading at the top of each group.
         * If a date group already exists in the output, append new word entries to that group without creating a duplicate date heading.
         * Don't copy old words from the file. Only add new words with new lines.
 
