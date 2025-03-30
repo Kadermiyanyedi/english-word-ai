@@ -1,6 +1,6 @@
 from smolagents import LiteLLMModel
 from smolagents.agents import CodeAgent
-from tools import OutputWriter
+from tools import OutputWriter, FileReader
 from prompts import ENGLISH_TEACHER_TEMPLATE
 from smolagents import DuckDuckGoSearchTool
 import typer
@@ -9,11 +9,15 @@ from enums import EnglishLevel
 from config import load_env
 import os
 
+
 MODEL = os.environ.get("ENGLISH_AI_MODEL", "gemini/gemini-2.0-flash-exp")
 API_KEY = os.environ.get("ENGLISH_AI_API_KEY", "your_api_key_here")
 
 model = LiteLLMModel(model_id=MODEL, api_key=API_KEY)
-agent = CodeAgent(tools=[OutputWriter(), DuckDuckGoSearchTool()], model=model)
+agent = CodeAgent(
+    tools=[OutputWriter(), FileReader(), DuckDuckGoSearchTool()],
+    model=model,
+)
 app = typer.Typer()
 
 
