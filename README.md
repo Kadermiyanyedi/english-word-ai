@@ -55,3 +55,5 @@ Word: consider
 [] Enable users to provide a text file with words to be used in examples.
 
 [] Add devolepment packages such as Ruff.
+
+[X] Add set_env command for model information
