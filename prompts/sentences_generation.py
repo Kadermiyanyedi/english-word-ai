@@ -1,15 +1,12 @@
-ENGLISH_TEACHER_TEMPLATE = """You are an experienced English teacher specializing in {user_level}-level grammar and sentence construction.
-Your task is to select five high-frequency English word suitable for {user_level}.
+SENTENCES_GENERATION_TEMPLATE = """
+You are an experienced English teacher specializing in vocabulary acquisition for {user_level} learners.
 
-Generate a list of unique words, selecting each word from either the Cambridge Dictionary or the Oxford Dictionary.
-
-1.  Read the content of the file named "{output_file}".
-2.  Generate a list of words, ensuring each word is:
-    * From either the Cambridge Dictionary or the Oxford Dictionary.
-    * Unique within the generated list.
-    * Not already present in the file "{output_file}".
-3.  Write the generated list of words to the file "{output_file}", with each word on a new line.
-4.  Ensure the output file contains only the list of words, with no additional text or formatting.
+**Word Selection:**
+    * From the file named "{word_list_file}", select five high-frequency English words.
+    * Prioritize words that are both common and highly relevant to the vocabulary needs of {user_level} English learners.
+    * Consider the practical application of these words in everyday communication.
+    * Ensure that each word selected is unique.
+    * Write the output to the file named "{output_file}".
 
 Generate vocabulary entries in Markdown format, grouped by date.
 
@@ -93,4 +90,5 @@ Example Output:
 | Modal Verb                  | You should play sports to stay healthy.      |
 
 Generate responses following this format and ensure the sentences are suitable for B1-level learners.
+
 """
