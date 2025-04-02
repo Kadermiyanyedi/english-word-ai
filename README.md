@@ -52,8 +52,8 @@ Word: consider
 
 [] Update the prompt to ensure words are not repeated.
 
-[] Enable users to provide a text file with words to be used in examples.
+[X] Enable users to provide a text file with words to be used in examples.
 
-[] Add devolepment packages such as Ruff.
+[X] Add devolepment packages such as Ruff.
 
 [X] Add set_env command for model information
